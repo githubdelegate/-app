@@ -13,6 +13,7 @@
 		42156ACC20C4D8F200C2A7FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42156ACB20C4D8F200C2A7FF /* Assets.xcassets */; };
 		42156ACF20C4D8F200C2A7FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42156ACD20C4D8F200C2A7FF /* LaunchScreen.storyboard */; };
 		42156AD220C4D8F200C2A7FF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 42156AD120C4D8F200C2A7FF /* main.m */; };
+		42156ADA20C4DA8300C2A7FF /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42156AD920C4DA8300C2A7FF /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		42156ACE20C4D8F200C2A7FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		42156AD020C4D8F200C2A7FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		42156AD120C4D8F200C2A7FF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		42156AD920C4DA8300C2A7FF /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42156ADA20C4DA8300C2A7FF /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +47,7 @@
 			children = (
 				42156AC120C4D8F100C2A7FF /* 定位 */,
 				42156AC020C4D8F100C2A7FF /* Products */,
+				42156AD820C4DA8300C2A7FF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -69,6 +73,14 @@
 				42156AD120C4D8F200C2A7FF /* main.m */,
 			);
 			path = "定位";
+			sourceTree = "<group>";
+		};
+		42156AD820C4DA8300C2A7FF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				42156AD920C4DA8300C2A7FF /* CoreLocation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -102,6 +114,11 @@
 				TargetAttributes = {
 					42156ABE20C4D8F100C2A7FF = {
 						CreatedOnToolsVersion = 9.3.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -290,7 +307,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "zy.--";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nigo.whereareyou;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -307,7 +324,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "zy.--";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nigo.whereareyou;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

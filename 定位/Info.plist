@@ -20,6 +20,18 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>为了方便您的亲朋好友知道您的位置,我们需要您开启定位服务</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>为了方便您的亲朋好友知道您的位置,我们需要您开启定位服务</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>为了方便您的亲朋好友知道您的位置,我们需要您开启定位服务</string>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>fetch</string>
+		<string>location</string>
+		<string>remote-notification</string>
+	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
