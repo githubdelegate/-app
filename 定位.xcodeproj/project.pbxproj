@@ -8,26 +8,88 @@
 
 /* Begin PBXBuildFile section */
 		42156AC420C4D8F100C2A7FF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 42156AC320C4D8F100C2A7FF /* AppDelegate.m */; };
-		42156AC720C4D8F100C2A7FF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42156AC620C4D8F100C2A7FF /* ViewController.m */; };
+		42156AC720C4D8F100C2A7FF /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 42156AC620C4D8F100C2A7FF /* ViewController.mm */; };
 		42156ACA20C4D8F100C2A7FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42156AC820C4D8F100C2A7FF /* Main.storyboard */; };
 		42156ACC20C4D8F200C2A7FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42156ACB20C4D8F200C2A7FF /* Assets.xcassets */; };
 		42156ACF20C4D8F200C2A7FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42156ACD20C4D8F200C2A7FF /* LaunchScreen.storyboard */; };
 		42156AD220C4D8F200C2A7FF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 42156AD120C4D8F200C2A7FF /* main.m */; };
 		42156ADA20C4DA8300C2A7FF /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42156AD920C4DA8300C2A7FF /* CoreLocation.framework */; };
+		42156AE020C50C3B00C2A7FF /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42156ADF20C50C3B00C2A7FF /* QuartzCore.framework */; };
+		42156AE220C50C4100C2A7FF /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42156AE120C50C4100C2A7FF /* OpenGLES.framework */; };
+		42156AE420C50C4800C2A7FF /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42156AE320C50C4800C2A7FF /* SystemConfiguration.framework */; };
+		42156AE620C50C4E00C2A7FF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42156AE520C50C4E00C2A7FF /* CoreGraphics.framework */; };
+		42156AE820C50C5500C2A7FF /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42156AE720C50C5500C2A7FF /* Security.framework */; };
+		42156AEA20C50C5E00C2A7FF /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 42156AE920C50C5E00C2A7FF /* libsqlite3.0.tbd */; };
+		42156AEC20C50C6400C2A7FF /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42156AEB20C50C6400C2A7FF /* CoreTelephony.framework */; };
+		42156AEE20C50C7600C2A7FF /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 42156AED20C50C7600C2A7FF /* libstdc++.6.0.9.tbd */; };
+		42156AF120C61AAA00C2A7FF /* ZYUserCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 42156AF020C61AAA00C2A7FF /* ZYUserCollectionViewCell.m */; };
+		42156AF420C6227400C2A7FF /* ZYUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 42156AF320C6227400C2A7FF /* ZYUserModel.m */; };
+		42156B0720C6262600C2A7FF /* 添加成员.png in Resources */ = {isa = PBXBuildFile; fileRef = 42156AF620C6262600C2A7FF /* 添加成员.png */; };
+		42156B0820C6262600C2A7FF /* 地图_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 42156AF720C6262600C2A7FF /* 地图_1.png */; };
+		42156B0920C6262600C2A7FF /* 定位_4.png in Resources */ = {isa = PBXBuildFile; fileRef = 42156AF820C6262600C2A7FF /* 定位_4.png */; };
+		42156B0A20C6262600C2A7FF /* 添加成员_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 42156AF920C6262600C2A7FF /* 添加成员_1.png */; };
+		42156B0B20C6262600C2A7FF /* 定位.png in Resources */ = {isa = PBXBuildFile; fileRef = 42156AFA20C6262600C2A7FF /* 定位.png */; };
+		42156B0C20C6262600C2A7FF /* 定位_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 42156AFB20C6262600C2A7FF /* 定位_3.png */; };
+		42156B0D20C6262600C2A7FF /* 添加好友_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 42156AFC20C6262600C2A7FF /* 添加好友_1.png */; };
+		42156B0E20C6262600C2A7FF /* 定位_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 42156AFD20C6262600C2A7FF /* 定位_2.png */; };
+		42156B0F20C6262600C2A7FF /* 定位_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 42156AFE20C6262600C2A7FF /* 定位_1.png */; };
+		42156B1020C6262600C2A7FF /* 人.png in Resources */ = {isa = PBXBuildFile; fileRef = 42156AFF20C6262600C2A7FF /* 人.png */; };
+		42156B1120C6262600C2A7FF /* 添加好友.png in Resources */ = {isa = PBXBuildFile; fileRef = 42156B0020C6262600C2A7FF /* 添加好友.png */; };
+		42156B1220C6262600C2A7FF /* 人字拖.png in Resources */ = {isa = PBXBuildFile; fileRef = 42156B0120C6262600C2A7FF /* 人字拖.png */; };
+		42156B1320C6262600C2A7FF /* 婴儿,儿童,小孩,baby.png in Resources */ = {isa = PBXBuildFile; fileRef = 42156B0220C6262600C2A7FF /* 婴儿,儿童,小孩,baby.png */; };
+		42156B1420C6262600C2A7FF /* 地图.png in Resources */ = {isa = PBXBuildFile; fileRef = 42156B0320C6262600C2A7FF /* 地图.png */; };
+		42156B1520C6262600C2A7FF /* 行人.png in Resources */ = {isa = PBXBuildFile; fileRef = 42156B0420C6262600C2A7FF /* 行人.png */; };
+		42156B1620C6262600C2A7FF /* 人像.png in Resources */ = {isa = PBXBuildFile; fileRef = 42156B0520C6262600C2A7FF /* 人像.png */; };
+		42156B1720C6262600C2A7FF /* 人_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 42156B0620C6262600C2A7FF /* 人_1.png */; };
+		D6770BD24A8602FAB4FE0CCE /* libPods-定位.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BBFBA8838C5F2B73C0B113D /* libPods-定位.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3BBFBA8838C5F2B73C0B113D /* libPods-定位.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-定位.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		42156ABF20C4D8F100C2A7FF /* 定位.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "定位.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		42156AC220C4D8F100C2A7FF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		42156AC320C4D8F100C2A7FF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		42156AC520C4D8F100C2A7FF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		42156AC620C4D8F100C2A7FF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		42156AC620C4D8F100C2A7FF /* ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
 		42156AC920C4D8F100C2A7FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		42156ACB20C4D8F200C2A7FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		42156ACE20C4D8F200C2A7FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		42156AD020C4D8F200C2A7FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		42156AD120C4D8F200C2A7FF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		42156AD920C4DA8300C2A7FF /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		42156ADB20C50C0D00C2A7FF /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.a; path = Pods/BaiduMapKit/BaiduMapKit/thirdlibs/libcrypto.a; sourceTree = "<group>"; };
+		42156ADC20C50C0D00C2A7FF /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssl.a; path = Pods/BaiduMapKit/BaiduMapKit/thirdlibs/libssl.a; sourceTree = "<group>"; };
+		42156ADF20C50C3B00C2A7FF /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		42156AE120C50C4100C2A7FF /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		42156AE320C50C4800C2A7FF /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		42156AE520C50C4E00C2A7FF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		42156AE720C50C5500C2A7FF /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		42156AE920C50C5E00C2A7FF /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		42156AEB20C50C6400C2A7FF /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		42156AED20C50C7600C2A7FF /* libstdc++.6.0.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.0.9.tbd"; path = "usr/lib/libstdc++.6.0.9.tbd"; sourceTree = SDKROOT; };
+		42156AEF20C61AAA00C2A7FF /* ZYUserCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYUserCollectionViewCell.h; sourceTree = "<group>"; };
+		42156AF020C61AAA00C2A7FF /* ZYUserCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYUserCollectionViewCell.m; sourceTree = "<group>"; };
+		42156AF220C6227400C2A7FF /* ZYUserModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYUserModel.h; sourceTree = "<group>"; };
+		42156AF320C6227400C2A7FF /* ZYUserModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYUserModel.m; sourceTree = "<group>"; };
+		42156AF620C6262600C2A7FF /* 添加成员.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "添加成员.png"; sourceTree = "<group>"; };
+		42156AF720C6262600C2A7FF /* 地图_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "地图_1.png"; sourceTree = "<group>"; };
+		42156AF820C6262600C2A7FF /* 定位_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "定位_4.png"; sourceTree = "<group>"; };
+		42156AF920C6262600C2A7FF /* 添加成员_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "添加成员_1.png"; sourceTree = "<group>"; };
+		42156AFA20C6262600C2A7FF /* 定位.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "定位.png"; sourceTree = "<group>"; };
+		42156AFB20C6262600C2A7FF /* 定位_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "定位_3.png"; sourceTree = "<group>"; };
+		42156AFC20C6262600C2A7FF /* 添加好友_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "添加好友_1.png"; sourceTree = "<group>"; };
+		42156AFD20C6262600C2A7FF /* 定位_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "定位_2.png"; sourceTree = "<group>"; };
+		42156AFE20C6262600C2A7FF /* 定位_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "定位_1.png"; sourceTree = "<group>"; };
+		42156AFF20C6262600C2A7FF /* 人.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "人.png"; sourceTree = "<group>"; };
+		42156B0020C6262600C2A7FF /* 添加好友.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "添加好友.png"; sourceTree = "<group>"; };
+		42156B0120C6262600C2A7FF /* 人字拖.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "人字拖.png"; sourceTree = "<group>"; };
+		42156B0220C6262600C2A7FF /* 婴儿,儿童,小孩,baby.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "婴儿,儿童,小孩,baby.png"; sourceTree = "<group>"; };
+		42156B0320C6262600C2A7FF /* 地图.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "地图.png"; sourceTree = "<group>"; };
+		42156B0420C6262600C2A7FF /* 行人.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "行人.png"; sourceTree = "<group>"; };
+		42156B0520C6262600C2A7FF /* 人像.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "人像.png"; sourceTree = "<group>"; };
+		42156B0620C6262600C2A7FF /* 人_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "人_1.png"; sourceTree = "<group>"; };
+		4465DBE097F3CF3E39DFC3A8 /* Pods-定位.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-定位.debug.xcconfig"; path = "Pods/Target Support Files/Pods-定位/Pods-定位.debug.xcconfig"; sourceTree = "<group>"; };
+		A200C9250903AE84BC5FD213 /* Pods-定位.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-定位.release.xcconfig"; path = "Pods/Target Support Files/Pods-定位/Pods-定位.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,7 +97,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42156AEE20C50C7600C2A7FF /* libstdc++.6.0.9.tbd in Frameworks */,
+				42156AEC20C50C6400C2A7FF /* CoreTelephony.framework in Frameworks */,
+				42156AEA20C50C5E00C2A7FF /* libsqlite3.0.tbd in Frameworks */,
+				42156AE820C50C5500C2A7FF /* Security.framework in Frameworks */,
+				42156AE620C50C4E00C2A7FF /* CoreGraphics.framework in Frameworks */,
+				42156AE420C50C4800C2A7FF /* SystemConfiguration.framework in Frameworks */,
+				42156AE220C50C4100C2A7FF /* OpenGLES.framework in Frameworks */,
+				42156AE020C50C3B00C2A7FF /* QuartzCore.framework in Frameworks */,
 				42156ADA20C4DA8300C2A7FF /* CoreLocation.framework in Frameworks */,
+				D6770BD24A8602FAB4FE0CCE /* libPods-定位.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,6 +119,7 @@
 				42156AC120C4D8F100C2A7FF /* 定位 */,
 				42156AC020C4D8F100C2A7FF /* Products */,
 				42156AD820C4DA8300C2A7FF /* Frameworks */,
+				58675E1E735EC42695DB10F3 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,10 +134,15 @@
 		42156AC120C4D8F100C2A7FF /* 定位 */ = {
 			isa = PBXGroup;
 			children = (
+				42156AF520C6262600C2A7FF /* icon */,
 				42156AC220C4D8F100C2A7FF /* AppDelegate.h */,
 				42156AC320C4D8F100C2A7FF /* AppDelegate.m */,
 				42156AC520C4D8F100C2A7FF /* ViewController.h */,
-				42156AC620C4D8F100C2A7FF /* ViewController.m */,
+				42156AC620C4D8F100C2A7FF /* ViewController.mm */,
+				42156AF220C6227400C2A7FF /* ZYUserModel.h */,
+				42156AF320C6227400C2A7FF /* ZYUserModel.m */,
+				42156AEF20C61AAA00C2A7FF /* ZYUserCollectionViewCell.h */,
+				42156AF020C61AAA00C2A7FF /* ZYUserCollectionViewCell.m */,
 				42156AC820C4D8F100C2A7FF /* Main.storyboard */,
 				42156ACB20C4D8F200C2A7FF /* Assets.xcassets */,
 				42156ACD20C4D8F200C2A7FF /* LaunchScreen.storyboard */,
@@ -78,9 +155,53 @@
 		42156AD820C4DA8300C2A7FF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				42156AED20C50C7600C2A7FF /* libstdc++.6.0.9.tbd */,
+				42156AEB20C50C6400C2A7FF /* CoreTelephony.framework */,
+				42156AE920C50C5E00C2A7FF /* libsqlite3.0.tbd */,
+				42156AE720C50C5500C2A7FF /* Security.framework */,
+				42156AE520C50C4E00C2A7FF /* CoreGraphics.framework */,
+				42156AE320C50C4800C2A7FF /* SystemConfiguration.framework */,
+				42156AE120C50C4100C2A7FF /* OpenGLES.framework */,
+				42156ADF20C50C3B00C2A7FF /* QuartzCore.framework */,
+				42156ADB20C50C0D00C2A7FF /* libcrypto.a */,
+				42156ADC20C50C0D00C2A7FF /* libssl.a */,
 				42156AD920C4DA8300C2A7FF /* CoreLocation.framework */,
+				3BBFBA8838C5F2B73C0B113D /* libPods-定位.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		42156AF520C6262600C2A7FF /* icon */ = {
+			isa = PBXGroup;
+			children = (
+				42156AF620C6262600C2A7FF /* 添加成员.png */,
+				42156AF720C6262600C2A7FF /* 地图_1.png */,
+				42156AF820C6262600C2A7FF /* 定位_4.png */,
+				42156AF920C6262600C2A7FF /* 添加成员_1.png */,
+				42156AFA20C6262600C2A7FF /* 定位.png */,
+				42156AFB20C6262600C2A7FF /* 定位_3.png */,
+				42156AFC20C6262600C2A7FF /* 添加好友_1.png */,
+				42156AFD20C6262600C2A7FF /* 定位_2.png */,
+				42156AFE20C6262600C2A7FF /* 定位_1.png */,
+				42156AFF20C6262600C2A7FF /* 人.png */,
+				42156B0020C6262600C2A7FF /* 添加好友.png */,
+				42156B0120C6262600C2A7FF /* 人字拖.png */,
+				42156B0220C6262600C2A7FF /* 婴儿,儿童,小孩,baby.png */,
+				42156B0320C6262600C2A7FF /* 地图.png */,
+				42156B0420C6262600C2A7FF /* 行人.png */,
+				42156B0520C6262600C2A7FF /* 人像.png */,
+				42156B0620C6262600C2A7FF /* 人_1.png */,
+			);
+			path = icon;
+			sourceTree = "<group>";
+		};
+		58675E1E735EC42695DB10F3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4465DBE097F3CF3E39DFC3A8 /* Pods-定位.debug.xcconfig */,
+				A200C9250903AE84BC5FD213 /* Pods-定位.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -90,9 +211,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 42156AD520C4D8F200C2A7FF /* Build configuration list for PBXNativeTarget "定位" */;
 			buildPhases = (
+				0108D0D18BD9FD7191B8BBC5 /* [CP] Check Pods Manifest.lock */,
 				42156ABB20C4D8F100C2A7FF /* Sources */,
 				42156ABC20C4D8F100C2A7FF /* Frameworks */,
 				42156ABD20C4D8F100C2A7FF /* Resources */,
+				A6B699424FAAC16DAAADB208 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -145,22 +268,80 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42156B1120C6262600C2A7FF /* 添加好友.png in Resources */,
+				42156B0B20C6262600C2A7FF /* 定位.png in Resources */,
 				42156ACF20C4D8F200C2A7FF /* LaunchScreen.storyboard in Resources */,
+				42156B0D20C6262600C2A7FF /* 添加好友_1.png in Resources */,
+				42156B1420C6262600C2A7FF /* 地图.png in Resources */,
+				42156B1020C6262600C2A7FF /* 人.png in Resources */,
+				42156B1320C6262600C2A7FF /* 婴儿,儿童,小孩,baby.png in Resources */,
+				42156B0820C6262600C2A7FF /* 地图_1.png in Resources */,
+				42156B1720C6262600C2A7FF /* 人_1.png in Resources */,
+				42156B1620C6262600C2A7FF /* 人像.png in Resources */,
 				42156ACC20C4D8F200C2A7FF /* Assets.xcassets in Resources */,
+				42156B0920C6262600C2A7FF /* 定位_4.png in Resources */,
+				42156B0F20C6262600C2A7FF /* 定位_1.png in Resources */,
+				42156B1220C6262600C2A7FF /* 人字拖.png in Resources */,
+				42156B0720C6262600C2A7FF /* 添加成员.png in Resources */,
+				42156B0C20C6262600C2A7FF /* 定位_3.png in Resources */,
 				42156ACA20C4D8F100C2A7FF /* Main.storyboard in Resources */,
+				42156B0E20C6262600C2A7FF /* 定位_2.png in Resources */,
+				42156B0A20C6262600C2A7FF /* 添加成员_1.png in Resources */,
+				42156B1520C6262600C2A7FF /* 行人.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0108D0D18BD9FD7191B8BBC5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-定位-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A6B699424FAAC16DAAADB208 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-定位/Pods-定位-resources.sh",
+				"${PODS_ROOT}/AMap3DMap/MAMapKit.framework/AMap.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AMap.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-定位/Pods-定位-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		42156ABB20C4D8F100C2A7FF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				42156AC720C4D8F100C2A7FF /* ViewController.m in Sources */,
+				42156AC720C4D8F100C2A7FF /* ViewController.mm in Sources */,
 				42156AD220C4D8F200C2A7FF /* main.m in Sources */,
+				42156AF120C61AAA00C2A7FF /* ZYUserCollectionViewCell.m in Sources */,
 				42156AC420C4D8F100C2A7FF /* AppDelegate.m in Sources */,
+				42156AF420C6227400C2A7FF /* ZYUserModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,14 +479,20 @@
 		};
 		42156AD620C4D8F200C2A7FF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4465DBE097F3CF3E39DFC3A8 /* Pods-定位.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P32KBN5NR6;
 				INFOPLIST_FILE = "定位/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/BaiduMapKit/BaiduMapKit/thirdlibs",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.nigo.whereareyou;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -315,14 +502,20 @@
 		};
 		42156AD720C4D8F200C2A7FF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A200C9250903AE84BC5FD213 /* Pods-定位.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P32KBN5NR6;
 				INFOPLIST_FILE = "定位/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/BaiduMapKit/BaiduMapKit/thirdlibs",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.nigo.whereareyou;
 				PRODUCT_NAME = "$(TARGET_NAME)";
