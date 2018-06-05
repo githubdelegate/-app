@@ -9,12 +9,12 @@
 #import <UIKit/UIKit.h>
 #import <YYKit.h>
 #import <CoreLocation/CoreLocation.h>
+#import <Realm/Realm.h>
 
-@interface ZYUserModel : NSObject
+@interface ZYUserModel : RLMObject
 @property (nonatomic,strong) NSString *userid;
 @property (nonatomic,strong) NSString *name;
 @property (nonatomic,strong) NSString *avater;
 @property (nonatomic,strong) NSString *phone;
-@property (nonatomic,assign) CLLocation *location;
-
+@property (nonatomic,assign) CLLocationCoordinate2D location;
 @end

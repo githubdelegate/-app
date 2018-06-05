@@ -24,7 +24,8 @@
     self.userName = [[UILabel alloc] init];
     [self.contentView addSubview:self.userHeader];
     [self.contentView addSubview:self.userName];
-    
+    self.userName.font = [UIFont systemFontOfSize:15];
+    [self.userHeader setContentMode:UIViewContentModeScaleAspectFit];
     
     self.userHeader.clipsToBounds = YES;
     self.userHeader.layer.cornerRadius = 30;
@@ -44,7 +45,8 @@
 }
 
 - (void)setHeader:(NSString *)header name:(NSString *)name{
-    [self.userHeader setImageWithURL:[NSURL URLWithString:header] placeholder:nil];
+    UIImage *placeHodler = [[UIImage alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"user_default" ofType:@"png"]];
+    [self.userHeader setImageWithURL:[NSURL URLWithString:header] placeholder:placeHodler];
     [self.userName setText:name];
 }
 @end

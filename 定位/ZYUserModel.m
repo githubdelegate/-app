@@ -9,5 +9,7 @@
 #import "ZYUserModel.h"
 
 @implementation ZYUserModel
-
++ (NSArray<NSString *> *)ignoredProperties{
+    return @[@"location"];
+}
 @end

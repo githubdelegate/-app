@@ -12,4 +12,6 @@ target '定位' do
   pod 'AMapLocation'
   pod 'Masonry'
   pod 'YYKit'
+  pod 'AFNetworking'
+  pod 'Realm'
 end

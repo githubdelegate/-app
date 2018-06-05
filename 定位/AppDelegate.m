@@ -8,15 +8,27 @@
 
 #import "AppDelegate.h"
 #import <AMapFoundationKit/AMapFoundationKit.h>
+#import <Realm/Realm.h>
+#import "ZYLoc.h"
+#import "ZYBackLocationMgr.h"
 
 @interface AppDelegate ()
 @end
 
 @implementation AppDelegate
-
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     [AMapServices sharedServices].apiKey =@"a50f74228d38d5c427396206d9f98775";
+    
+    if ([launchOptions objectForKey:UIApplicationLaunchOptionsLocationKey]) {
+        ZYLoc *l = [ZYLoc new];
+        l.desc = @"重启啦看到的数据";
+        RLMRealm *realm = [RLMRealm defaultRealm];
+        [realm transactionWithBlock:^{
+            [realm addObject:l];
+        }];
+        [[ZYBackLocationMgr shareLocMgr] setAllowsBackgroundLocationUpdates:YES];
+        [[ZYBackLocationMgr shareLocMgr] startMonitoringSignificantLocationChanges];
+    }
     return YES;
 }
 

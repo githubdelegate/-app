@@ -27,13 +27,13 @@
 		42156B0720C6262600C2A7FF /* 添加成员.png in Resources */ = {isa = PBXBuildFile; fileRef = 42156AF620C6262600C2A7FF /* 添加成员.png */; };
 		42156B0820C6262600C2A7FF /* 地图_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 42156AF720C6262600C2A7FF /* 地图_1.png */; };
 		42156B0920C6262600C2A7FF /* 定位_4.png in Resources */ = {isa = PBXBuildFile; fileRef = 42156AF820C6262600C2A7FF /* 定位_4.png */; };
-		42156B0A20C6262600C2A7FF /* 添加成员_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 42156AF920C6262600C2A7FF /* 添加成员_1.png */; };
+		42156B0A20C6262600C2A7FF /* add_person.png in Resources */ = {isa = PBXBuildFile; fileRef = 42156AF920C6262600C2A7FF /* add_person.png */; };
 		42156B0B20C6262600C2A7FF /* 定位.png in Resources */ = {isa = PBXBuildFile; fileRef = 42156AFA20C6262600C2A7FF /* 定位.png */; };
 		42156B0C20C6262600C2A7FF /* 定位_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 42156AFB20C6262600C2A7FF /* 定位_3.png */; };
 		42156B0D20C6262600C2A7FF /* 添加好友_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 42156AFC20C6262600C2A7FF /* 添加好友_1.png */; };
 		42156B0E20C6262600C2A7FF /* 定位_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 42156AFD20C6262600C2A7FF /* 定位_2.png */; };
 		42156B0F20C6262600C2A7FF /* 定位_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 42156AFE20C6262600C2A7FF /* 定位_1.png */; };
-		42156B1020C6262600C2A7FF /* 人.png in Resources */ = {isa = PBXBuildFile; fileRef = 42156AFF20C6262600C2A7FF /* 人.png */; };
+		42156B1020C6262600C2A7FF /* user_default.png in Resources */ = {isa = PBXBuildFile; fileRef = 42156AFF20C6262600C2A7FF /* user_default.png */; };
 		42156B1120C6262600C2A7FF /* 添加好友.png in Resources */ = {isa = PBXBuildFile; fileRef = 42156B0020C6262600C2A7FF /* 添加好友.png */; };
 		42156B1220C6262600C2A7FF /* 人字拖.png in Resources */ = {isa = PBXBuildFile; fileRef = 42156B0120C6262600C2A7FF /* 人字拖.png */; };
 		42156B1320C6262600C2A7FF /* 婴儿,儿童,小孩,baby.png in Resources */ = {isa = PBXBuildFile; fileRef = 42156B0220C6262600C2A7FF /* 婴儿,儿童,小孩,baby.png */; };
@@ -41,6 +41,9 @@
 		42156B1520C6262600C2A7FF /* 行人.png in Resources */ = {isa = PBXBuildFile; fileRef = 42156B0420C6262600C2A7FF /* 行人.png */; };
 		42156B1620C6262600C2A7FF /* 人像.png in Resources */ = {isa = PBXBuildFile; fileRef = 42156B0520C6262600C2A7FF /* 人像.png */; };
 		42156B1720C6262600C2A7FF /* 人_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 42156B0620C6262600C2A7FF /* 人_1.png */; };
+		42156B1A20C67F6500C2A7FF /* ZYLoc.m in Sources */ = {isa = PBXBuildFile; fileRef = 42156B1920C67F6500C2A7FF /* ZYLoc.m */; };
+		42156B1D20C688B900C2A7FF /* ZYBackLocationMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = 42156B1C20C688B900C2A7FF /* ZYBackLocationMgr.m */; };
+		42156B2020C6A49E00C2A7FF /* TestTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42156B1F20C6A49E00C2A7FF /* TestTableViewController.m */; };
 		D6770BD24A8602FAB4FE0CCE /* libPods-定位.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BBFBA8838C5F2B73C0B113D /* libPods-定位.a */; };
 /* End PBXBuildFile section */
 
@@ -74,13 +77,13 @@
 		42156AF620C6262600C2A7FF /* 添加成员.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "添加成员.png"; sourceTree = "<group>"; };
 		42156AF720C6262600C2A7FF /* 地图_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "地图_1.png"; sourceTree = "<group>"; };
 		42156AF820C6262600C2A7FF /* 定位_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "定位_4.png"; sourceTree = "<group>"; };
-		42156AF920C6262600C2A7FF /* 添加成员_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "添加成员_1.png"; sourceTree = "<group>"; };
+		42156AF920C6262600C2A7FF /* add_person.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = add_person.png; sourceTree = "<group>"; };
 		42156AFA20C6262600C2A7FF /* 定位.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "定位.png"; sourceTree = "<group>"; };
 		42156AFB20C6262600C2A7FF /* 定位_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "定位_3.png"; sourceTree = "<group>"; };
 		42156AFC20C6262600C2A7FF /* 添加好友_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "添加好友_1.png"; sourceTree = "<group>"; };
 		42156AFD20C6262600C2A7FF /* 定位_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "定位_2.png"; sourceTree = "<group>"; };
 		42156AFE20C6262600C2A7FF /* 定位_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "定位_1.png"; sourceTree = "<group>"; };
-		42156AFF20C6262600C2A7FF /* 人.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "人.png"; sourceTree = "<group>"; };
+		42156AFF20C6262600C2A7FF /* user_default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user_default.png; sourceTree = "<group>"; };
 		42156B0020C6262600C2A7FF /* 添加好友.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "添加好友.png"; sourceTree = "<group>"; };
 		42156B0120C6262600C2A7FF /* 人字拖.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "人字拖.png"; sourceTree = "<group>"; };
 		42156B0220C6262600C2A7FF /* 婴儿,儿童,小孩,baby.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "婴儿,儿童,小孩,baby.png"; sourceTree = "<group>"; };
@@ -88,6 +91,12 @@
 		42156B0420C6262600C2A7FF /* 行人.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "行人.png"; sourceTree = "<group>"; };
 		42156B0520C6262600C2A7FF /* 人像.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "人像.png"; sourceTree = "<group>"; };
 		42156B0620C6262600C2A7FF /* 人_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "人_1.png"; sourceTree = "<group>"; };
+		42156B1820C67F6500C2A7FF /* ZYLoc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYLoc.h; sourceTree = "<group>"; };
+		42156B1920C67F6500C2A7FF /* ZYLoc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYLoc.m; sourceTree = "<group>"; };
+		42156B1B20C688B900C2A7FF /* ZYBackLocationMgr.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYBackLocationMgr.h; sourceTree = "<group>"; };
+		42156B1C20C688B900C2A7FF /* ZYBackLocationMgr.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYBackLocationMgr.m; sourceTree = "<group>"; };
+		42156B1E20C6A49E00C2A7FF /* TestTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestTableViewController.h; sourceTree = "<group>"; };
+		42156B1F20C6A49E00C2A7FF /* TestTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestTableViewController.m; sourceTree = "<group>"; };
 		4465DBE097F3CF3E39DFC3A8 /* Pods-定位.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-定位.debug.xcconfig"; path = "Pods/Target Support Files/Pods-定位/Pods-定位.debug.xcconfig"; sourceTree = "<group>"; };
 		A200C9250903AE84BC5FD213 /* Pods-定位.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-定位.release.xcconfig"; path = "Pods/Target Support Files/Pods-定位/Pods-定位.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -139,6 +148,12 @@
 				42156AC320C4D8F100C2A7FF /* AppDelegate.m */,
 				42156AC520C4D8F100C2A7FF /* ViewController.h */,
 				42156AC620C4D8F100C2A7FF /* ViewController.mm */,
+				42156B1B20C688B900C2A7FF /* ZYBackLocationMgr.h */,
+				42156B1C20C688B900C2A7FF /* ZYBackLocationMgr.m */,
+				42156B1E20C6A49E00C2A7FF /* TestTableViewController.h */,
+				42156B1F20C6A49E00C2A7FF /* TestTableViewController.m */,
+				42156B1820C67F6500C2A7FF /* ZYLoc.h */,
+				42156B1920C67F6500C2A7FF /* ZYLoc.m */,
 				42156AF220C6227400C2A7FF /* ZYUserModel.h */,
 				42156AF320C6227400C2A7FF /* ZYUserModel.m */,
 				42156AEF20C61AAA00C2A7FF /* ZYUserCollectionViewCell.h */,
@@ -177,13 +192,13 @@
 				42156AF620C6262600C2A7FF /* 添加成员.png */,
 				42156AF720C6262600C2A7FF /* 地图_1.png */,
 				42156AF820C6262600C2A7FF /* 定位_4.png */,
-				42156AF920C6262600C2A7FF /* 添加成员_1.png */,
+				42156AF920C6262600C2A7FF /* add_person.png */,
 				42156AFA20C6262600C2A7FF /* 定位.png */,
 				42156AFB20C6262600C2A7FF /* 定位_3.png */,
 				42156AFC20C6262600C2A7FF /* 添加好友_1.png */,
 				42156AFD20C6262600C2A7FF /* 定位_2.png */,
 				42156AFE20C6262600C2A7FF /* 定位_1.png */,
-				42156AFF20C6262600C2A7FF /* 人.png */,
+				42156AFF20C6262600C2A7FF /* user_default.png */,
 				42156B0020C6262600C2A7FF /* 添加好友.png */,
 				42156B0120C6262600C2A7FF /* 人字拖.png */,
 				42156B0220C6262600C2A7FF /* 婴儿,儿童,小孩,baby.png */,
@@ -273,7 +288,7 @@
 				42156ACF20C4D8F200C2A7FF /* LaunchScreen.storyboard in Resources */,
 				42156B0D20C6262600C2A7FF /* 添加好友_1.png in Resources */,
 				42156B1420C6262600C2A7FF /* 地图.png in Resources */,
-				42156B1020C6262600C2A7FF /* 人.png in Resources */,
+				42156B1020C6262600C2A7FF /* user_default.png in Resources */,
 				42156B1320C6262600C2A7FF /* 婴儿,儿童,小孩,baby.png in Resources */,
 				42156B0820C6262600C2A7FF /* 地图_1.png in Resources */,
 				42156B1720C6262600C2A7FF /* 人_1.png in Resources */,
@@ -286,7 +301,7 @@
 				42156B0C20C6262600C2A7FF /* 定位_3.png in Resources */,
 				42156ACA20C4D8F100C2A7FF /* Main.storyboard in Resources */,
 				42156B0E20C6262600C2A7FF /* 定位_2.png in Resources */,
-				42156B0A20C6262600C2A7FF /* 添加成员_1.png in Resources */,
+				42156B0A20C6262600C2A7FF /* add_person.png in Resources */,
 				42156B1520C6262600C2A7FF /* 行人.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -340,6 +355,9 @@
 				42156AC720C4D8F100C2A7FF /* ViewController.mm in Sources */,
 				42156AD220C4D8F200C2A7FF /* main.m in Sources */,
 				42156AF120C61AAA00C2A7FF /* ZYUserCollectionViewCell.m in Sources */,
+				42156B2020C6A49E00C2A7FF /* TestTableViewController.m in Sources */,
+				42156B1D20C688B900C2A7FF /* ZYBackLocationMgr.m in Sources */,
+				42156B1A20C67F6500C2A7FF /* ZYLoc.m in Sources */,
 				42156AC420C4D8F100C2A7FF /* AppDelegate.m in Sources */,
 				42156AF420C6227400C2A7FF /* ZYUserModel.m in Sources */,
 			);
