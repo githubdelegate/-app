@@ -34,8 +34,8 @@
 
 - (void)setupconfig{
     self.delegate = self;
-    self.minSpeed = 3;
-    self.minFilter = 50;
+    self.minSpeed = 5;
+    self.minFilter = 5;
     self.minInteval = 10;
     
     self.delegate = self;

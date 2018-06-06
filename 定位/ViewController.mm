@@ -16,6 +16,7 @@
 #import <YYKit/YYKit.h>
 #import "ZYLoc.h"
 #import "TestTableViewController.h"
+#import "ZYUserAnnotationView.h"
 
 #define ZYScreenW [UIScreen mainScreen].bounds.size.width
 #define ZYScreenH [UIScreen mainScreen].bounds.size.height
@@ -95,6 +96,20 @@
         NSLog(@"开始定位了");
         [self.mapView setShowsUserLocation:YES];
     });
+    
+    [self fetchFriendCoordinate];
+}
+
+
+/**
+ 获取好友的坐标点 去显示 annotation
+ */
+- (void)fetchFriendCoordinate{
+    MAPointAnnotation *pointAnnotation = [[MAPointAnnotation alloc] init];
+    pointAnnotation.coordinate = CLLocationCoordinate2DMake(39.989631, 116.481018);
+    pointAnnotation.title = @"方恒国际";
+    pointAnnotation.subtitle = @"阜通东大街6号";
+    [self.mapView addAnnotation:pointAnnotation];
 }
 
 
@@ -261,10 +276,14 @@
     loc.latitude = userLocation.location.coordinate.latitude;
     loc.longitude = userLocation.location.coordinate.longitude;
     loc.desc = @"高德 前台数据";
-    RLMRealm *realm = [RLMRealm defaultRealm];
-    [realm transactionWithBlock:^{
-        [realm addObject:loc];
-    }];
+    
+    if ([[UIApplication sharedApplication] applicationState] == UIApplicationStateBackground) {
+        loc.desc = @"高德 后台-- 数据";
+        RLMRealm *realm = [RLMRealm defaultRealm];
+        [realm transactionWithBlock:^{
+            [realm addObject:loc];
+        }];
+    }
 }
 
 /**
@@ -274,6 +293,36 @@
  */
 - (void)mapView:(MAMapView *)mapView didFailToLocateUserWithError:(NSError *)error{
     NSLog(@"__func__%s--thread=%@",__func__,[NSThread currentThread]);
+}
+
+- (MAAnnotationView *)mapView:(MAMapView *)mapView viewForAnnotation:(id<MAAnnotation>)annotation{
+    if ([annotation isKindOfClass:[MAPointAnnotation class]]){
+        static NSString *reuseIndetifier = @"annotationReuseIndetifier";
+        ZYUserAnnotationView *annotationView = (ZYUserAnnotationView *)[mapView dequeueReusableAnnotationViewWithIdentifier:reuseIndetifier];
+        if (annotationView == nil){
+            annotationView = [[ZYUserAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:reuseIndetifier];
+        }
+        UIImage *locImg = [[UIImage alloc]  initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"friend_loc" ofType:@"png"]];
+        annotationView.image = locImg;
+        [annotationView setAvaterUrl:@"https://b-ssl.duitang.com/uploads/item/201805/16/20180516224000_ZFhf3.thumb.700_0.jpeg"];
+        //设置中心点偏移，使得标注底部中间点成为经纬度对应点
+        annotationView.centerOffset = CGPointMake(0, -18);
+        annotationView.size = CGSizeMake(60, 60);
+//        annotationView.backgroundColor = [UIColor redColor];
+        return annotationView;
+    }
+    return nil;
+}
+
+- (void)mapView:(MAMapView *)mapView didSelectAnnotationView:(MAAnnotationView *)view{
+    [self.mapView setCenterCoordinate:view.annotation.coordinate animated:YES];
+    [self.mapView setZoomLevel:18 animated:YES];
+    [self.mapView setRotationDegree:0];
+    [self.mapView setCameraDegree:0];
+}
+
+- (void)mapView:(MAMapView *)mapView didDeselectAnnotationView:(MAAnnotationView *)view{
+    
 }
 
 
