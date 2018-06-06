@@ -29,6 +29,7 @@
 @property (nonatomic,strong) MAMapView *mapView;
 @property (nonatomic,strong) NSMutableArray *userList;
 @property (nonatomic,assign) BOOL mapLoaded; // 地图是否已经加载完成
+@property (nonatomic,strong) CLLocation *lastLocation;
 @end
 
 @implementation ViewController
@@ -272,6 +273,16 @@
  */
 - (void)mapView:(MAMapView *)mapView didUpdateUserLocation:(MAUserLocation *)userLocation updatingLocation:(BOOL)updatingLocation{
     NSLog(@"__func__%s--thread=%@",__func__,[NSThread currentThread]);
+    
+    if (self.lastLocation == nil) {
+        self.lastLocation = userLocation.location;
+    }
+
+    NSTimeInterval time = [userLocation.location.timestamp timeIntervalSinceDate:self.lastLocation.timestamp];
+    CLLocationDistance dis = [userLocation.location distanceFromLocation:self.lastLocation];
+    if (time < 30 || dis < 10) { // 30s 内不处理位置数据 ,小于10m 的距离不统计
+        return;
+    }
     ZYLoc *loc = [ZYLoc new];
     loc.latitude = userLocation.location.coordinate.latitude;
     loc.longitude = userLocation.location.coordinate.longitude;
@@ -279,11 +290,13 @@
     
     if ([[UIApplication sharedApplication] applicationState] == UIApplicationStateBackground) {
         loc.desc = @"高德 后台-- 数据";
-        RLMRealm *realm = [RLMRealm defaultRealm];
-        [realm transactionWithBlock:^{
-            [realm addObject:loc];
-        }];
     }
+    
+    self.lastLocation = userLocation.location;
+    RLMRealm *realm = [RLMRealm defaultRealm];
+    [realm transactionWithBlock:^{
+        [realm addObject:loc];
+    }];
 }
 
 /**
